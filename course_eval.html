@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Course Evaluation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+        label {
+            color: #333;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Course Evaluation Form</h1>
+
+<form action="course_eval.php" method="post">
+
+    <label for="evaluation_id">Evaluation ID:</label>
+    <input type="text" id="evaluation_id" name="evaluation_id" required><br><br>
+    
+    <label for="course_difficulty">Course Difficulty:</label>
+    <input type="text" id="course_difficulty" name="course_difficulty" required><br><br>
+    
+    <label for="course_rating">Course Rating:</label>
+    <input type="text" id="course_rating" name="course_rating" required><br><br>
+    
+    <label for="instructor_rating">Instructor Rating:</label>
+    <input type="text" id="instructor_rating" name="instructor_rating" required><br><br>
+    
+    <label for="feedback">Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+    
+    <label for="engagement_level">Engagement Level:</label>
+    <input type="text" id="engagement_level" name="engagement_level" required><br><br>
+    
+    <label for="communication_level">Communication Level:</label>
+    <input type="text" id="communication_level" name="communication_level" required><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

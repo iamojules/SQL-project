@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Course for Evaluation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 10px;
+        }
+        label {
+            color: #333;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add New Course</h2>
+    <form action="inputcourse.php" method="post">
+        <label for="course_id">Course ID:</label><br>
+        <input type="text" id="course_id" name="course_id"><br>
+
+        <label for="course_name">Course Name:</label><br>
+        <input type="text" id="course_name" name="course_name"><br>
+
+        <label for="credits">Credits:</label><br>
+        <input type="text" id="credits" name="credits"><br>
+
+        <label for="mode">Mode:</label><br>
+        <input type="text" id="mode" name="mode"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
